@@ -34,5 +34,7 @@ jobs:
       with:
         repository:  manidhar1986/testrakesh 
         token: ${{ secrets.VENKAT }}
-        run: echo `ls -ltr`
+        run: |
+          pwd
+          ls -ltrha
         
