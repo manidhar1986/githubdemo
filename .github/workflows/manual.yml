@@ -28,5 +28,10 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       run: echo "Hello ${{ github.event.inputs.name }}"
-    # checkout code     
-    - uses: actions/checkout@v2
+    # checkout code          
+    - name: Checkout 
+      uses: actions/checkout@v2
+      with:
+        repository:  manidhar1986/testrakesh 
+        token:  ${{ secrets.GitHub_PAT }}
+        
