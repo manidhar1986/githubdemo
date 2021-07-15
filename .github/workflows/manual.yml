@@ -34,7 +34,10 @@ jobs:
       with:
         repository:  manidhar1986/testrakesh 
         token: ${{ secrets.VENKAT }}
-        run: ls -lthr /home/runner/work/githubdemo/githubdemo
+        
+     # Print the content
+    - name: Print Content
+      run: ls -lthr /home/runner/work/githubdemo/githubdemo
         #pwd
         #ls -ltrh
         
