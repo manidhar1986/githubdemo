@@ -21,7 +21,7 @@ def main():
     client = session.client('s3')
 
     response = client.upload_file(
-        Filename="t1.txt",
+        Filename="t2.txt",
         Bucket=bucket_name,
         Key=aws_key
     )
