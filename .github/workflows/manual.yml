@@ -40,4 +40,6 @@ jobs:
       run: ls -lthr /home/runner/work/githubdemo/githubdemo
         #pwd
         #ls -ltrh
+    - name: Release to S3
+      run: bash release.sh ${{secrets.AWS_Bucket_Name}} "folder1/t1.txt" ${{secrets.AWS_Access_Key}} ${{secrets.AWS_Access_Secret}} "t1.txt"
         
